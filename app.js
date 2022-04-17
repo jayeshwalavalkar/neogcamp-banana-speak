@@ -1,8 +1,14 @@
 var button = document.querySelector("#btn");
 var textArea = document.querySelector("#txt-area");
+var divOutput = document.querySelector("#div-output");
 
-button.addEventListener("click", onButtonClickHandler);
+
+function translate() {
+
+}
 
 function onButtonClickHandler() {
-    console.log(textArea.value);
+    divOutput.innerText = textArea.value;
 }
+
+button.addEventListener("click", onButtonClickHandler);
